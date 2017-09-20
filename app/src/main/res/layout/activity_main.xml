@@ -6,29 +6,26 @@
     android:layout_height="match_parent"
     tools:context="br.com.bossini.meuprimeiroapp.MainActivity"
     android:weightSum="1"
-    android:orientation="vertical">
-
+    android:orientation="vertical"
+    android:onClick="sendMessage">
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <EditText
             android:id="@+id/edit_message"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="@string/edit_message"
-            android:layout_weight="1"
+            android:layout_weight="3"
             />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/button_send"/>
+            android:layout_weight="1"
+            android:text="@string/button_send"
+            android:onClick="sendMessage"/>
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="teste"/>
 
 </LinearLayout>
